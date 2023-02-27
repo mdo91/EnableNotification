@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5421F2C929900CD80093DEBE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421F2C829900CD80093DEBE /* NotificationService.swift */; };
 		543EE874299002E2001775AA /* MockTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE873299002E2001775AA /* MockTestsApp.swift */; };
 		543EE876299002E2001775AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE875299002E2001775AA /* ContentView.swift */; };
 		543EE878299002E3001775AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EE877299002E3001775AA /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		543EE885299002E3001775AA /* MockTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE884299002E3001775AA /* MockTestsTests.swift */; };
 		543EE88F299002E3001775AA /* MockTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE88E299002E3001775AA /* MockTestsUITests.swift */; };
 		543EE891299002E3001775AA /* MockTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE890299002E3001775AA /* MockTestsUITestsLaunchTests.swift */; };
+		543EE89E29900324001775AA /* NotificationCenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE89D29900324001775AA /* NotificationCenterTest.swift */; };
+		543EE8A029900470001775AA /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE89F29900470001775AA /* PushNotificationManager.swift */; };
+		543EE8A129900470001775AA /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EE89F29900470001775AA /* PushNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5421F2C729900A610093DEBE /* MockTests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MockTests.entitlements; sourceTree = "<group>"; };
+		5421F2C829900CD80093DEBE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		543EE870299002E1001775AA /* MockTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543EE873299002E2001775AA /* MockTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTestsApp.swift; sourceTree = "<group>"; };
 		543EE875299002E2001775AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		543EE88A299002E3001775AA /* MockTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543EE88E299002E3001775AA /* MockTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTestsUITests.swift; sourceTree = "<group>"; };
 		543EE890299002E3001775AA /* MockTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		543EE89D29900324001775AA /* NotificationCenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterTest.swift; sourceTree = "<group>"; };
+		543EE89F29900470001775AA /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,13 @@
 		543EE872299002E1001775AA /* MockTests */ = {
 			isa = PBXGroup;
 			children = (
+				5421F2C729900A610093DEBE /* MockTests.entitlements */,
 				543EE873299002E2001775AA /* MockTestsApp.swift */,
 				543EE875299002E2001775AA /* ContentView.swift */,
 				543EE877299002E3001775AA /* Assets.xcassets */,
 				543EE879299002E3001775AA /* Preview Content */,
+				543EE89F29900470001775AA /* PushNotificationManager.swift */,
+				5421F2C829900CD80093DEBE /* NotificationService.swift */,
 			);
 			path = MockTests;
 			sourceTree = "<group>";
@@ -114,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				543EE884299002E3001775AA /* MockTestsTests.swift */,
+				543EE89D29900324001775AA /* NotificationCenterTest.swift */,
 			);
 			path = MockTestsTests;
 			sourceTree = "<group>";
@@ -257,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5421F2C929900CD80093DEBE /* NotificationService.swift in Sources */,
+				543EE8A029900470001775AA /* PushNotificationManager.swift in Sources */,
 				543EE876299002E2001775AA /* ContentView.swift in Sources */,
 				543EE874299002E2001775AA /* MockTestsApp.swift in Sources */,
 			);
@@ -266,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543EE8A129900470001775AA /* PushNotificationManager.swift in Sources */,
 				543EE885299002E3001775AA /* MockTestsTests.swift in Sources */,
+				543EE89E29900324001775AA /* NotificationCenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockTests/MockTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MockTests/Preview Content\"";
@@ -443,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockTests/MockTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MockTests/Preview Content\"";

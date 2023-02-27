@@ -12,6 +12,11 @@ struct MockTestsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    DispatchQueue.main.async {
+                       
+                    }
+                }
         }
     }
 }
